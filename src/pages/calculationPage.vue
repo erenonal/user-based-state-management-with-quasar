@@ -27,7 +27,6 @@ import {setCookie, getCookie} from '../stores/cookie'
 
 const usersStore = useUsersStore();
 const user = getCookie("mailAddress");
-console.log(user)
 const userLayoutClass = () => {
   if (user === "user2") {
     return "two-column";
@@ -39,6 +38,7 @@ const userLayoutClass = () => {
 const props = defineProps({
   label: String,
 });
+
 
 </script>
 

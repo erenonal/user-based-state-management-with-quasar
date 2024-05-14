@@ -4,7 +4,7 @@ import selection from "./pages/selection.vue";
 import Login from "./pages/login.vue";
 const routes = [
   {
-    path: "/login",
+    path: "/",
     name: "Login",
     component: Login,
   },

@@ -21,7 +21,6 @@ export const useUsersStore = defineStore("usersStore", {
       } else if (domain === "user4") {
         return "user4";
       } else {
-        console.log("sicansi");
         return "standard";
       }
     },
