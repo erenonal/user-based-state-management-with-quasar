@@ -36,9 +36,10 @@
   display: flex;
   border: solid 1px gray;
   padding-inline: 1rem;
-  width: fit-content;
+  width: 100%;
   min-width: 350px;
   gap: 10px;
+
 }
 
 .two-column .column {

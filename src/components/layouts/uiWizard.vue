@@ -22,7 +22,6 @@ import SecondUserPage from "../screens/SecondUserPage.vue";
 import ThirdUserPage from "../screens/ThirdUserPage.vue";
 import FourthUserPage from "../screens/FourthUserPage.vue";
 import { defineProps } from "vue";
-
 import { useUsersStore } from "../../stores/UsersStore.js";
 const usersStore = useUsersStore();
 const user = usersStore.userType;
@@ -34,6 +33,9 @@ const userLayoutClass = () => {
     return "one-column";
   }
 };
+// usersStore.updateMailAddress("new@example.com");
+
+console.log(usersStore.userType);
 const props = defineProps({
   label: String,
 });

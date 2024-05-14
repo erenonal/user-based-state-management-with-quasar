@@ -1,7 +1,7 @@
 <template>
   <div>
-    <uiWizard></uiWizard>
-    <!-- <selection></selection> -->
+    <!-- <uiWizard></uiWizard> -->
+    <selection></selection>
   </div>
 </template>
 

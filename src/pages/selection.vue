@@ -7,7 +7,6 @@
   </div>
 </template>
 <script setup>
-import { ref } from "vue";
 import FirstUserPage from "../components/screens/FirstUserPage.vue";
 import SecondUserPage from "../components/screens/SecondUserPage.vue";
 import ThirdUserPage from "../components/screens/ThirdUserPage.vue";
