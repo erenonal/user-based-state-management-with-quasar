@@ -7,13 +7,15 @@
     </div>
     <div class="column" >
       <div class="row" style="height: 100%; width: 100%;">
-        <SubmitButton
-          type="Submit"
-          color="positive"
-            :label="label || defaultLabel"
-          disabled="false"
-          text-color="dark"
-        />
+        <router-link to="/calculation-page">
+            <SubmitButton
+              type="Submit"
+              color="positive"
+              :label="label || defaultLabel"
+              disabled="false"
+              text-color="dark"
+            />
+          </router-link>
       </div>
     </div>
   </div>

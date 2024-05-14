@@ -1,5 +1,5 @@
 import { createRouter, createWebHashHistory } from "vue-router";
-import uiWizard from "./pages/uiWizard.vue";
+import calculationPage from "./pages/calculationPage.vue";
 import selection from "./pages/selection.vue";
 import Login from "./pages/login.vue";
 const routes = [
@@ -9,9 +9,9 @@ const routes = [
     component: Login,
   },
   {
-    path: "/ui-wizard",
-    name: "UI Wizard",
-    component: uiWizard,
+    path: "/calculation-page",
+    name: "Calculation Page",
+    component: calculationPage,
   },
   {
     path: "/selection",

@@ -33,9 +33,7 @@ const userLayoutClass = () => {
     return "one-column";
   }
 };
-// usersStore.updateMailAddress("new@example.com");
 
-console.log(usersStore.userType);
 const props = defineProps({
   label: String,
 });

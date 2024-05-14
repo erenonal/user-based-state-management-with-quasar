@@ -4,13 +4,15 @@
     <br />
     <div class="row"><OutputCard></OutputCard></div>
     <div class="row">
-      <SubmitButton
-        type="Submit"
-        color="positive"
-        :label="label || defaultLabel"
-        disabled="false"
-        text-color="dark"
-      />
+      <router-link to="/calculation-page">
+        <SubmitButton
+          type="Submit"
+          color="positive"
+          :label="label || defaultLabel"
+          disabled="false"
+          text-color="dark"
+        />
+      </router-link>
     </div>
   </div>
 </template>

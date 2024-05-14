@@ -6,7 +6,7 @@ export const useUsersStore = defineStore("usersStore", {
       { numberX: 1, numberY: 2, addingResult: 3, multiplyingResult: 2 },
       { numberX: 3, numberY: 4, addingResult: 7, multiplyingResult: 12 },
     ],
-    mailAddress: "user4@gmail.com",
+    mailAddress: "user1@gmail.com",
   }),
 
   getters: {

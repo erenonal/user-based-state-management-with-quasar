@@ -16,6 +16,7 @@
               text-color="dark"
             />
           </div>
+          <router-link to="/calculation-page">
             <SubmitButton
               type="Submit"
               color="positive"
@@ -23,7 +24,7 @@
               disabled="false"
               text-color="dark"
             />
-            
+          </router-link>
         </div>
       </div>
       <div class="column">
@@ -38,7 +39,7 @@
         ></div>
       </div>
     </div>
-    <div id="chart" ref="chart"  v-if="isMobile"></div>
+    <div id="chart" ref="chart" v-if="isMobile"></div>
   </div>
 </template>
 <script setup>
@@ -107,23 +108,23 @@ onMounted(() => {
   const config = {
     displayModeBar: true,
     modeBarButtonsToAdd: [
-      'zoomIn2d',
-      'zoomOut2d',
-      'pan2d',
-      'select2d',
-      'lasso2d',
-      'zoomInGeo',
-      'zoomOutGeo',
-      'resetGeo',
-      'hoverClosestCartesian',
-      'hoverCompareCartesian',
-      'zoom3d',
-      'pan3d',
-      'resetCameraDefault3d',
-      'resetCameraLastSave3d',
-      'hoverClosest3d',
+      "zoomIn2d",
+      "zoomOut2d",
+      "pan2d",
+      "select2d",
+      "lasso2d",
+      "zoomInGeo",
+      "zoomOutGeo",
+      "resetGeo",
+      "hoverClosestCartesian",
+      "hoverCompareCartesian",
+      "zoom3d",
+      "pan3d",
+      "resetCameraDefault3d",
+      "resetCameraLastSave3d",
+      "hoverClosest3d",
     ],
-    modeBarButtonsToRemove: ['toggleSpikelines', 'resetScale2d'],
+    modeBarButtonsToRemove: ["toggleSpikelines", "resetScale2d"],
   };
 
   Plotly.newPlot(chart.value, data, layout, config);

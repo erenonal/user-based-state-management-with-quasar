@@ -6,19 +6,21 @@
           <InputCard></InputCard>
         </div>
         <div class="row">
-          <SubmitButton
-            type="Submit"
-            color="positive"
-            :label="label || defaultLabel"
-            disabled="false"
-            text-color="dark"
-          />
+          <router-link to="/calculation-page">
+            <SubmitButton
+              type="Submit"
+              color="positive"
+              :label="label || defaultLabel"
+              disabled="false"
+              text-color="dark"
+            />
+          </router-link>
         </div>
       </div>
     </div>
-    <div class="column" style="width: 100%;">
-      <div class="row" style="margin-bottom: 2rem;">
-        <OutputCard ></OutputCard>
+    <div class="column" style="width: 100%">
+      <div class="row" style="margin-bottom: 2rem">
+        <OutputCard></OutputCard>
       </div>
     </div>
   </div>

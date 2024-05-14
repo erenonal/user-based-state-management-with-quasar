@@ -117,3 +117,22 @@
   width: 100%;
 }
 /* q-card part */
+
+/* login part*/
+
+.centered-component {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Additional styling for input and button */
+.centered-component input,
+.centered-component button {
+  margin: 10px auto; /* Adjusted margin to center elements horizontally */
+  display: block; /* Ensures input and button elements are displayed as block elements */
+}
+/* login part*/

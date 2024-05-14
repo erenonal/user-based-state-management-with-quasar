@@ -4,7 +4,7 @@
     <q-btn-group>
       <router-link to="/login" class="q-btn"> Login </router-link>
       <router-link to="/selection" class="q-btn"> Selection </router-link>
-      <router-link to="/ui-wizard" class="q-btn"> UI Wizard </router-link>
+      <router-link to="/calculation-page" class="q-btn"> Calculation Page </router-link>
     </q-btn-group>
   </q-toolbar>
 </template>
