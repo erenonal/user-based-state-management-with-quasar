@@ -27,6 +27,17 @@
 import { ref } from "vue";
 import SubmitButton from "../executeButton.vue";
 
+import { useUsersStore } from "../../stores/UsersStore.js";
+const usersStore = useUsersStore();
+const user = usersStore.userType;
+
+const userLayoutClass = () => {
+  if (user === "user2") {
+    return "two-column";
+  } else {
+    return "one-column";
+  }
+};
 const input1 = ref("");
 const input2 = ref("");
 
@@ -38,14 +49,5 @@ const submitForm = () => {
     input2.value
   );
 };
-const user = "user4";
 
-// Computed property to determine layout class based on user type
-const userLayoutClass = () => {
-  if (user === "user1" || user === "user3" || user === "user4") {
-    return "two-column";
-  } else {
-    return "one-column";
-  }
-};
 </script>

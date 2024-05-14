@@ -17,6 +17,6 @@ const props = defineProps({
   type: String,
   color: String,
   label: String,
-  disabled: String,
+  disabled: Boolean,
 });
 </script>

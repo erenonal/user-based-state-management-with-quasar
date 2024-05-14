@@ -23,19 +23,21 @@ import ThirdUserPage from "../screens/ThirdUserPage.vue";
 import FourthUserPage from "../screens/FourthUserPage.vue";
 import { defineProps } from "vue";
 
-const props = defineProps({
-  label: String,
-});
-const user = "user4";
+import { useUsersStore } from "../../stores/UsersStore.js";
+const usersStore = useUsersStore();
+const user = usersStore.userType;
 
-// Computed property to determine layout class based on user type
 const userLayoutClass = () => {
-  if (user === "user1" || user === "user3" || user === "user4") {
+  if (user === "user2") {
     return "two-column";
   } else {
     return "one-column";
   }
 };
+const props = defineProps({
+  label: String,
+});
+
 </script>
 
 <style scoped></style>
