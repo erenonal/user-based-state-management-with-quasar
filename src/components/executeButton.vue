@@ -4,7 +4,6 @@
     :type="type"
     :color="color"
     :label="label"
-    :disable=disabled
     class="q-mt-md"
     style="width: 100%; margin-bottom: 1rem;"
   />
@@ -17,6 +16,5 @@ const props = defineProps({
   type: String,
   color: String,
   label: String,
-  disabled: Boolean,
 });
 </script>

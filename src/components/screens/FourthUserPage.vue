@@ -12,7 +12,6 @@
               type="Submit"
               color="positive"
               label="SHOW CHART"
-              disabled="false"
               text-color="dark"
             />
           </div>
@@ -21,7 +20,6 @@
               type="Submit"
               color="positive"
               :label="label || defaultLabel"
-              disabled="false"
               text-color="dark"
             />
           </router-link>

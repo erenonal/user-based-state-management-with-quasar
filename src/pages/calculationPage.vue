@@ -23,9 +23,11 @@ import ThirdUserPage from "../components/screens/ThirdUserPage.vue";
 import FourthUserPage from "../components/screens/FourthUserPage.vue";
 import { defineProps } from "vue";
 import { useUsersStore } from "../stores/UsersStore.js";
-const usersStore = useUsersStore();
-const user = usersStore.userType;
+import {setCookie, getCookie} from '../stores/cookie'
 
+const usersStore = useUsersStore();
+const user = getCookie("mailAddress");
+console.log(user)
 const userLayoutClass = () => {
   if (user === "user2") {
     return "two-column";

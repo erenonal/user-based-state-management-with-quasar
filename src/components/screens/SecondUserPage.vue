@@ -9,7 +9,6 @@
           type="Submit"
           color="positive"
           :label="label || defaultLabel"
-          disabled="false"
           text-color="dark"
         />
       </router-link>
