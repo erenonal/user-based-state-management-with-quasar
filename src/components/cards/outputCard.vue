@@ -1,33 +1,42 @@
 <template>
-  <q-card>
+  <q-card class="q-card">
     <q-card-section>
       <div class="text-h6 output-title">Results</div>
-      <q-form @submit.prevent="submitForm">
-        <q-input
-          outlined
-          v-model="input1"
-          label="Addition"
-          dense
-          class="q-mb-md"
-        />
-        <q-input outlined v-model="input2" label="Multiplication" dense />
-      </q-form>
+      <div class="output-column">
+        <span class="output-text-label">Addition:</span>
+        <span class="output-text-number">{{ resultAddition }}</span>
+      </div>
+      <div class="output-column">
+        <span class="output-text-label">Multiplication:</span>
+        <span class="output-text-number">{{ resultMultiplication }}</span>
+      </div>
     </q-card-section>
-    <SubmitButton
-      type="Submit"
-      color="positive"
-      label="SHOW CHART"
-      disabled="false"
-      text-color="dark"
-      v-if="user == 'user4'"
-    />
+   
   </q-card>
 </template>
+
 <script setup>
 import { ref } from "vue";
-import SubmitButton from "../executeButton.vue";
 
 import { useUsersStore } from "../../stores/UsersStore.js";
+const props = defineProps({
+  buttonText: {
+    type: String,
+    default: "GO",
+  },
+  actionType: {
+    type: String,
+    default: "GO",
+  },
+  resultAddition: {
+    type: Number,
+    default: 0,
+  },
+  resultMultiplication: {
+    type: Number,
+    default: 0,
+  },
+});
 const usersStore = useUsersStore();
 const user = usersStore.userType;
 
@@ -49,5 +58,6 @@ const submitForm = () => {
     input2.value
   );
 };
-
 </script>
+
+<style scoped></style>

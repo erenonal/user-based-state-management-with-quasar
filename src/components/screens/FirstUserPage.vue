@@ -16,9 +16,9 @@
         </div>
       </div>
     </div>
-    <div class="column">
-      <div class="row">
-        <OutputCard class="row"></OutputCard>
+    <div class="column" style="width: 100%;">
+      <div class="row" style="margin-bottom: 2rem;">
+        <OutputCard ></OutputCard>
       </div>
     </div>
   </div>

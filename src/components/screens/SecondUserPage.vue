@@ -1,6 +1,7 @@
 <template>
   <div class="one-column">
     <div class="row"><InputCard></InputCard></div>
+    <br />
     <div class="row"><OutputCard></OutputCard></div>
     <div class="row">
       <SubmitButton

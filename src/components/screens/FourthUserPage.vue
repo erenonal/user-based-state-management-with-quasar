@@ -11,11 +11,19 @@
             <SubmitButton
               type="Submit"
               color="positive"
-              :label="label || defaultLabel"
+              label="SHOW CHART"
               disabled="false"
               text-color="dark"
             />
           </div>
+            <SubmitButton
+              type="Submit"
+              color="positive"
+              :label="label || defaultLabel"
+              disabled="false"
+              text-color="dark"
+            />
+            
         </div>
       </div>
       <div class="column">

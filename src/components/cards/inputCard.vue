@@ -1,6 +1,5 @@
 <template>
-  <div>
-    <q-card>
+  <q-card class="q-card">
       <q-card-section>
         <div class="text-h6 input-title">Inputs</div>
         <q-form @submit.prevent="submitForm">
@@ -9,7 +8,6 @@
         </q-form>
       </q-card-section>
     </q-card>
-  </div>
 </template>
 <script setup>
 import { ref } from "vue";

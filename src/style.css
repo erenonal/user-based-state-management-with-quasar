@@ -39,12 +39,15 @@
   width: 100%;
   min-width: 350px;
   gap: 10px;
-
+}
+.two-column .row {
+  width: 100%;
 }
 
 .two-column .column {
   flex: 1;
   align-items: center;
+  justify-content: space-around;
 }
 .one-column-container {
   margin-top: 5rem;
@@ -82,3 +85,35 @@
   width: 100%;
   height: 100%;
 }
+
+/* output part */
+
+.output-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 5px;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  border: solid 1px lightgrey;
+  border-radius: 4px;
+}
+
+.output-text-label {
+  font-size: 0.75rem;
+  color: grey;
+}
+
+.output-text-number {
+  font-size: 0.9rem;
+  color: black;
+}
+
+/* output part */
+
+/* q-card part */
+.q-card {
+  width: 100%;
+}
+/* q-card part */

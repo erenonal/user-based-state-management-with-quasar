@@ -17,12 +17,12 @@
 
 <script setup>
 import { ref } from "vue";
-import FirstUserPage from "../screens/FirstUserPage.vue";
-import SecondUserPage from "../screens/SecondUserPage.vue";
-import ThirdUserPage from "../screens/ThirdUserPage.vue";
-import FourthUserPage from "../screens/FourthUserPage.vue";
+import FirstUserPage from "../components/screens/FirstUserPage.vue";
+import SecondUserPage from "../components/screens/SecondUserPage.vue";
+import ThirdUserPage from "../components/screens/ThirdUserPage.vue";
+import FourthUserPage from "../components/screens/FourthUserPage.vue";
 import { defineProps } from "vue";
-import { useUsersStore } from "../../stores/UsersStore.js";
+import { useUsersStore } from "../stores/UsersStore.js";
 const usersStore = useUsersStore();
 const user = usersStore.userType;
 

@@ -2,10 +2,11 @@
   <div class="two-column">
     <div class="column">
       <div class="row"><InputCard></InputCard></div>
+      <br>
       <div class="row"><OutputCard></OutputCard></div>
     </div>
     <div class="column" >
-      <div class="row" style="height: 100%">
+      <div class="row" style="height: 100%; width: 100%;">
         <SubmitButton
           type="Submit"
           color="positive"
