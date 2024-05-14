@@ -2,21 +2,24 @@
   <div class="two-column">
     <div class="column">
       <div class="row"><InputCard></InputCard></div>
-      <br>
+      <br />
       <div class="row"><OutputCard></OutputCard></div>
     </div>
-    <div class="column" >
-      <div class="row" style="height: 100%; width: 100%;">
-        <router-link to="/calculation-page">
-            <SubmitButton
-              type="Submit"
-              color="positive"
-              :label="label || defaultLabel"
-              disabled="false"
-              text-color="dark"
-            />
-          </router-link>
-      </div>
+    <div class="column">
+      <router-link
+        to="/calculation-page"
+        style="height: 100%; text-decoration: none"
+      >
+        <div class="row" style="height: 100%;">
+          <SubmitButton
+            type="Submit"
+            color="positive"
+            :label="label || defaultLabel"
+            disabled="false"
+            text-color="dark"
+          />
+        </div>
+      </router-link>
     </div>
   </div>
 </template>

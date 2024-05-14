@@ -6,7 +6,7 @@ export const useUsersStore = defineStore("usersStore", {
       { numberX: 1, numberY: 2, addingResult: 3, multiplyingResult: 2 },
       { numberX: 3, numberY: 4, addingResult: 7, multiplyingResult: 12 },
     ],
-    mailAddress: "user1@gmail.com",
+    mailAddress: localStorage.getItem("mailAddress") || "", // Retrieve mail address from local storage
   }),
 
   getters: {
@@ -21,6 +21,7 @@ export const useUsersStore = defineStore("usersStore", {
       } else if (domain === "user4") {
         return "user4";
       } else {
+        console.log("sicansi");
         return "standard";
       }
     },
