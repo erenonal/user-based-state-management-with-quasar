@@ -37,6 +37,7 @@ const props = defineProps({
     default: 0,
   },
 });
+
 const usersStore = useUsersStore();
 const user = usersStore.userType;
 
@@ -50,14 +51,7 @@ const userLayoutClass = () => {
 const input1 = ref("");
 const input2 = ref("");
 
-const submitForm = () => {
-  console.log(
-    "Form submitted with input1:",
-    input1.value,
-    "and input2:",
-    input2.value
-  );
-};
+
 </script>
 
 <style scoped></style>

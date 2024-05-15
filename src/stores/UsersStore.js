@@ -6,7 +6,9 @@ export const useUsersStore = defineStore("usersStore", {
       { numberX: 1, numberY: 2, addingResult: 3, multiplyingResult: 2 },
       { numberX: 3, numberY: 4, addingResult: 7, multiplyingResult: 12 },
     ],
-    mailAddress: localStorage.getItem("mailAddress") || "", // Retrieve mail address from local storage
+    mailAddress: localStorage.getItem("mailAddress") || "",
+    doneAdditions: [],
+    doneMultiplications: [],
   }),
 
   getters: {
@@ -24,11 +26,29 @@ export const useUsersStore = defineStore("usersStore", {
         return "standard";
       }
     },
+    getdoneAdditions(){
+      return this.doneAdditions;
+    },
+    getdoneMultiplications(){
+      return this.doneMultiplications;
+    }
   },
 
   actions: {
     updateMailAddress(newAddress) {
       this.mailAddress = newAddress;
     },
+    updateMdoneAdditions(additions) {
+      this.doneAdditions.push(additions);
+      if (this.doneAdditions.length > 5) {
+        this.doneAdditions.shift();
+      }
+    },
+    updateMultiplications(multiplications) {
+      this.doneMultiplications.push(multiplications);
+      if (this.doneMultiplications.length > 5) {
+        this.doneMultiplications.shift();
+      }
+    }, 
   },
 });

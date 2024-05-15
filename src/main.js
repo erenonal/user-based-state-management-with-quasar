@@ -2,10 +2,10 @@ import { createApp } from "vue";
 import { Quasar } from "quasar";
 import { createPinia } from "pinia";
 import "@quasar/extras/material-icons/material-icons.css";
-import "quasar/dist/quasar.css"; // Import Quasar CSS from dist folder
+import "quasar/dist/quasar.css";
 import App from "./App.vue";
-import router from "./router"; // Import the router instance
-import './style.css'; // Import your CSS file here
+import router from "./router"; 
+import './style.css';  
 
 const myApp = createApp(App);
 const pinia = createPinia();
